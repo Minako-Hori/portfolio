@@ -1,24 +1,75 @@
 @charset "utf-8";
 
+/*全体的な装飾*/
 body {
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
 }
 
+/*ナビゲーションバーの全体装飾*/
 ul.global-nav {
     font-size: 30px;
     color: black;
 }
 
-ul.global-nav li {
-    list-style: none;
-    float: left;
-}
-nav{
+/*ナビゲーションバーの一部分の装飾*/
+/*nav{
     text-align: center;
     border-bottom: 2px solid cornflowerblue;
-}
+}*/
+
+/*ナビゲーションバーが浮き上がっている仕上がり*/
 div.head-bottom{
     display: inline-block;
+}
+
+div.wrap{
+    clear: both;
+    margin-top: 5px;
+    padding: 3px 0;
+    margin: 0 auto;
+    padding-left: 10%;
+    padding-right:  10%;1
+}
+
+/*各大見出しの装飾*/
+h1.Top{
+    font-family: 'Bitter', serif;
+    font-size: 50px;
+    border-bottom: 1px solid #cccccc;
+}
+h1.Profile{
+    font-family: 'Bitter', serif;
+    font-size: 50px;
+    border-bottom: 1px solid #cccccc;
+}
+
+/*トップの全体装飾*/
+div.Top{
+    background-image: url(./image/tyoutyo.jpg);
+    background-repeat: no-repeat; /*画像を繰り返さない*/
+    background-position: center center; /*画像の表示開始位置を指定*/
+    background-attachment: fixed; /*画像の表示位置を固定*/
+    background-size: cover;
+    /* opacity: 0.55; 55％不透明度(＝45％透過) */
+    /* background-color: #ffffff; */
+}
+
+/*プロフィールの全体装飾*/
+div.Profile{
+    background-image: url(./image/tyakku.jpg);
+    background-repeat: no-repeat; /*画像を繰り返さない*/
+    background-position: center center; /*画像の表示開始位置を指定*/
+    background-attachment: fixed; /*画像の表示位置を固定*/
+    background-size: cover;
+}
+
+div.profile-txt{
+    width: 540px;
+    float: left;
+}
+
+img.Profile-image{
+    width: 25px;
+    height: 25px;
 }
