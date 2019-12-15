@@ -64,7 +64,7 @@ div.Profile{
     background-size: cover;
 }
 
-div.profile-txt{
+#Profile.profile-txt{
     width: 540px;
     float: left;
 }
