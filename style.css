@@ -188,3 +188,12 @@ div.box-a {
   bottom: 0;
   margin: 0;  
  }*/
+
+ img.img-pre{
+  width: 200px;
+  height: 200px;
+  object-fit: cover; /* この一行を追加するだけ！ */
+ }
+ .art-list .col-md-6{
+     padding:10px 15px 10px 15px;
+ }
