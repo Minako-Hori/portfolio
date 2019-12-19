@@ -6,95 +6,126 @@
   <title>サンプルページ</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link href="style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"
+    type="text/javascript"></script>
+  <script src="js/index.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
 </head>
 
-<body>
+<header>
   <!-- ナビゲーションバー -->
   <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
     <h5 class="my-0 mr-md-auto font-weight-normal">portfolio</h5>
 
     <nav class="my-2 my-md-0 mr-md-3">
-      <a class="p-2 text-dark" href="#">Top</a>
-      <a class="p-2 text-dark" href="#">Profile</a>
-      <a class="p-2 text-dark" href="#">Works</a>
-      <a class="p-2 text-dark" href="#">Contact</a>
+      <a class="p-2 text-dark" href="#top">Top</a>
+      <a class="p-2 text-dark" href="#about">Profile</a>
+      <a class="p-2 text-dark" href="#works">Works</a>
+      <a class="p-2 text-dark" href="#contact">Contact</a>
     </nav>
   </div>
+</header>
 
+<body>
   <div class="wrap">
 
     <!-- トップ -->
-    <h1 class="Top">Top</h1>
-    <div class="Top">
-      <p>このwebサイトは・・・　<br>このウェブサイトは・・・</p>
+    <div class="effect-fade" id="top">
+      <h1 class="Top">Top</h1>
+      <div class="Top">
+        <p>ようこそ
+          <br>堀未奈子のポートフォリオへ
+        </p>
+      </div>
     </div>
 
     <!-- プロフィール -->
-    <h1 class="Profile">Profile</h1>
-    <div class="Profile">
-      <h2 class="Me">Me</h2>
-      <!-- 自己紹介文と自画像 -->
-      <section class="Profile clearfix">
-        <div class="Profile-txt">
-          <p><span>name 堀　未奈子</span>
-            <img class="Profile-image" src="image/img5.JPG" alt="堀未奈子のプロフィール画像">
-            <br>aaaaaaaaaaaaaaaaaa
-            <br>aaaaaaaaaaaaaaaaaa
-            <br>aaaaaaaaaaaaaaaaaa
-          </p>
-        </div>
-      </section>
-      <!-- 経歴 -->
-      <section class="career">
-        <h2 class="icon">Career and Job history</h2>
-        <table>
-          <tr>
-            <th>2014年4月</th>
-            <td>大阪電気通信大学　総合情報学部　情報学科　入学</td>
-          </tr>
-          <tr>
-            <th>2016年12月</th>
-            <td>卒業研究　あー</td>
-          </tr>
-          <tr>
-            <th>2018年3月</th>
-            <td>大阪電気通信大学　総合情報学部　情報学科　卒業
-            </td>
-          </tr>
-          <tr>
-            <th>2018年4月</th>
-            <td>株式会社IDOM　入社</td>
-          </tr>
-          <tr>
-            <th>2019年12月</th>
-            <td>株式会社IDOM　退社</td>
-          </tr>
-        </table>
-      </section>
+    <div class="effect-fade" id="about">
+      <h1 class="Profile">About</h1>
+      <div class="Profile">
+        <h2 class="Me">Profile</h2>
+        <!-- 自己紹介文と自画像 -->
+        <section class="Profile clearfix">
+          <div class="Profile-txt">
+            <p>
+              <img class="Profile-image" src="image/icon.JPG" alt="堀未奈子のプロフィール画像">
+              <span>名前： 堀　未奈子</span>
+              <br>1996年2月9日大阪府生まれ。
+              <br>中学生になってから真剣にイラストを描き始める。
+              <br>大学では情報学科を専攻し、中でも図形処理などを中心に学ぶ視覚メディア研究室に所属。
+              <br>キャラクターや、ポスター、勧誘チラシなどのデザインをよく担当する。
+            </p>
+          </div>
+        </section>
+        <!-- 経歴 -->
+        <section class="career">
+          <h2 class="icon">Career and Job history</h2>
+          <table>
+            <tr>
+              <th>2014年4月</th>
+              <td>大阪電気通信大学　総合情報学部　情報学科　入学</td>
+            </tr>
+            <tr>
+              <th>2016年12月</th>
+              <td>卒業研究　あー</td>
+            </tr>
+            <tr>
+              <th>2018年3月</th>
+              <td>大阪電気通信大学　総合情報学部　情報学科　卒業
+              </td>
+            </tr>
+            <tr>
+              <th>2018年4月</th>
+              <td>株式会社IDOM　入社</td>
+            </tr>
+            <tr>
+              <th>2019年12月</th>
+              <td>株式会社IDOM　退社</td>
+            </tr>
+          </table>
+        </section>
+      </div>
     </div>
 
     <!-- ワークス -->
-    <h1 class="Works">Works</h1>
-    <div class="Works">
-      <h2>Illustrations</h2>
-      <p>これまでに描いたイラストを掲載しています。</p>
-
-
-      <div class="row art-list">
-        <div class="col-md-6"><img class="img-pre" src="image/img1.PNG"></div>
-        <div class="col-md-6"><img class="img-pre" src="image/img6.JPG"></div>
-        <div class="col-md-6"><img class="img-pre" src="image/img5.JPG"></div>
-        <div class="col-md-6"><img class="img-pre" src="image/img1.PNG"></div>
+    <div class="effect-fade" id="works">
+      <h1 class="Works">Works</h1>
+      <div class="Works">
+        <h2>Illustrations</h2>
+        <p>これまでに描いたイラストの一部を掲載。</p>
+        <div class="container">
+          <div class="row art-list">
+            <div class="col-md-3"><a href="image/img1.PNG" data-lightbox="group"><img class="img-pre"
+                  src="image/img1.PNG" width="300"></a></div>
+            <div class="col-md-3"><a href="image/img4.JPG" data-lightbox="group"><img class="img-pre"
+                  src="image/img4.JPG" width="300"></a></div>
+            <div class="col-md-3"><a href="image/img5.JPG" data-lightbox="group"><img class="img-pre"
+                  src="image/img5.JPG" width="300"></a></div>
+            <div class="col-md-3"><a href="image/img6.JPG" data-lightbox="group"><img class="img-pre"
+                  src="image/img6.JPG" width="300"></a></div>
+            <div class="col-md-3"><a href="image/img7.JPG" data-lightbox="group"><img class="img-pre"
+                  src="image/img7.JPG" width="300"></a></div>
+            <div class="col-md-3"><a href="image/img8.JPG" data-lightbox="group"><img class="img-pre"
+                  src="image/img8.JPG" width="300"></a></div>
+            <div class="col-md-3"><a href="image/img6.JPG" data-lightbox="group"><img class="img-pre"
+                  src="image/img6.JPG" width="300"></a></div>
+            <div class="col-md-3"><a href="image/img6.JPG" data-lightbox="group"><img class="img-pre"
+                  src="image/img6.JPG" width="300"></a></div>
+          </div>
+        </div>
       </div>
+    </div>
 
-
-      <!-- <div class="container"> -->
-      <!-- <div class="box-a"><img src="image/img1.PNG"></div> -->
-      <!-- <div class="box-b"><img src="image/img6.jpg"></div> -->
-      <!-- <div class="box-c"><img src="image/img7.JPG"></div> -->
-      <!-- <div class="box-d"><img src="image/img8.JPG"></div> -->
-      <!-- </div> -->
+    <div class="effect-fade" id="contact">
+      <h1 class="Contact">Contact</h1>
+      <div class="contact">
+        Email:..............
+      </div>
     </div>
   </div><!-- </div>全体の終わり -->
 </body>

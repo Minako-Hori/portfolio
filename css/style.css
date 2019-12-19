@@ -4,19 +4,16 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
-/*ナビゲーションバーの全体装飾*/
-ul.global-nav {
-    font-size: 30px;
-    color: black;
-}
-
-/*ナビゲーションバーの一部分の装飾*/
-/*nav{
-    text-align: center;
-    border-bottom: 2px solid cornflowerblue;
-}*/
+/* ナビゲーションバーの全体装飾 */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10000;
+  }
 
 /*ナビゲーションバーが浮き上がっている仕上がり*/
 div.head-bottom{
@@ -25,8 +22,8 @@ div.head-bottom{
 
 div.wrap{
     clear: both;
-    margin-top: 5px;
-    padding: 3px 0;
+    margin-top: 100px;
+    /* padding: 3px 0; */
     margin: 0 auto;
     padding-left: 10%;
     padding-right:  10%;
@@ -37,7 +34,9 @@ h1 {
     font-family: 'Bitter', serif;
     font-size: 50px;
     border-bottom: 1px solid #cccccc;
+    padding-top: 100px;/*ナビバーと被らないように*/
 }
+
 /*h1.Profile{
     font-family: 'Bitter', serif;
     font-size: 50px;
@@ -63,7 +62,6 @@ div.Top{
 
 /*プロフィールの全体装飾*/
 div.Profile{
-    background-image: url(./image/tyakku.jpg);
     background-repeat: no-repeat; /*画像を繰り返さない*/
     background-position: center center; /*画像の表示開始位置を指定*/
     background-attachment: fixed; /*画像の表示位置を固定*/
@@ -80,18 +78,13 @@ div.Profile{
 img.Profile-image{
     width: 240px;
     height: 240px;
-    float: right;
-    border-radius: 20%;
+    float: left;
+    border-radius: 20%;/*縁取り*/
 }
 
 /*プロフィールテキストの一部分を太文字に*/
 #Profile.Profile-txt span{
     font-weight: bold;
-}
-
-/*プロフィール画像の位置変更*/
-#Profile.Profile-image{
-    float: right;
 }
 
 /*回り込みを解除*/
@@ -130,70 +123,33 @@ table{
 
 /*ワークスの全体装飾*/
 div.Works{
-    background-image: url(./image/KAZ829001_TP_V.jpg);
     background-repeat: no-repeat; /*画像を繰り返さない*/
     background-position: center center; /*画像の表示開始位置を指定*/
     background-attachment: fixed; /*画像の表示位置を固定*/
     background-size: cover;/*全体を囲うように表示*/
 }
-
-
-/*div.container {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 1 1;
-    grid-template-rows: 1 1;
+.container{
+    max-width: 900px;
 }
-
-.box-a img {
-    width: 100%; /* ADD 
-    height:100%; /* ADD 
-    object-fit: scale-down;
-  }
-
-div.box-a {
-    grid-column: 1 ;
-    grid-row: 1 ;
-    background: #fc2;
-    border-color: #fa0;
-    
-  }
-  
-  div.box-b {
-    grid-column: 2 / 3 ;
-    grid-row: 1 / 2;
-    background: #0bd;
-    border-color: #09c;
-  }
-  
-  div.box-c {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    background: #c6c;
-    border-color: #a4a;
-  }
-  
- div.box-d {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    background: #0ba;
-    border-color: #098;
- }*/
-
- /*.thumb{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 0;  
- }*/
-
- img.img-pre{
+img.img-pre{
   width: 200px;
   height: 200px;
-  object-fit: cover; /* この一行を追加するだけ！ */
+  object-fit: cover;
+  /* padding-left: 10%; */
+  /* padding-right: 10%; */
  }
- .art-list .col-md-6{
-     padding:10px 15px 10px 15px;
+
+.art-list .col-md-3{
+     padding:10px 5% 10px 5%;
  }
+
+ .effect-fade {
+     opacity : 0;
+    transform : translate(0, 45px);
+    transition : all 1000ms;
+    }
+    
+    .effect-fade.effect-scroll {
+        opacity : 1;
+        transform : translate(0, 0);
+    }
