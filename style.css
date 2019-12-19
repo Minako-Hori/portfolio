@@ -33,15 +33,21 @@ div.wrap{
 }
 
 /*各大見出しの装飾*/
-h1.Top{
+h1 {
     font-family: 'Bitter', serif;
     font-size: 50px;
     border-bottom: 1px solid #cccccc;
 }
-h1.Profile{
+/*h1.Profile{
     font-family: 'Bitter', serif;
     font-size: 50px;
     border-bottom: 1px solid #cccccc;
+}*/
+
+/*各中見出し装飾*/
+h2 {
+    font-family: 'Bitter', serif;
+    font-size: 24px;
 }
 
 /*トップの全体装飾*/
@@ -64,13 +70,121 @@ div.Profile{
     background-size: cover;
 }
 
+/*プロフィール文装飾*/
 #Profile.profile-txt{
     width: 540px;
     float: left;
 }
 
+/*プロフィール画像編集*/
 img.Profile-image{
-    width: 125px;
-    height: 125px;
+    width: 240px;
+    height: 240px;
+    float: right;
+    border-radius: 20%;
+}
+
+/*プロフィールテキストの一部分を太文字に*/
+#Profile.Profile-txt span{
+    font-weight: bold;
+}
+
+/*プロフィール画像の位置変更*/
+#Profile.Profile-image{
     float: right;
 }
+
+/*回り込みを解除*/
+.clearfix:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+/*セクション間の余白*/
+section.career{
+    margin-bottom: 35px;
+}
+
+/*表の見出し部分の装飾*/
+.career th{
+    width: 240px;
+    background-color: #f0f0f0;
+    padding: 12px 0;
+    border: 1px solid #cccccc;
+}
+
+/*表のデータセル部分の横幅*/
+.career td{
+    width: 660px;
+    background-color: #ffffff;
+    padding: 12px 0 12px 40px;
+    border: 1px solid #cccccc;
+}
+
+/*セルのあれこれ*/
+table{
+    border-spacing: 0;  /*隙間*/
+    border-collapse: collapse;  /*罫線の表示方法を指定*/
+}
+
+/*ワークスの全体装飾*/
+div.Works{
+    background-image: url(./image/KAZ829001_TP_V.jpg);
+    background-repeat: no-repeat; /*画像を繰り返さない*/
+    background-position: center center; /*画像の表示開始位置を指定*/
+    background-attachment: fixed; /*画像の表示位置を固定*/
+    background-size: cover;/*全体を囲うように表示*/
+}
+
+
+/*div.container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1 1;
+    grid-template-rows: 1 1;
+}
+
+.box-a img {
+    width: 100%; /* ADD 
+    height:100%; /* ADD 
+    object-fit: scale-down;
+  }
+
+div.box-a {
+    grid-column: 1 ;
+    grid-row: 1 ;
+    background: #fc2;
+    border-color: #fa0;
+    
+  }
+  
+  div.box-b {
+    grid-column: 2 / 3 ;
+    grid-row: 1 / 2;
+    background: #0bd;
+    border-color: #09c;
+  }
+  
+  div.box-c {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background: #c6c;
+    border-color: #a4a;
+  }
+  
+ div.box-d {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background: #0ba;
+    border-color: #098;
+ }*/
+
+ /*.thumb{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;  
+ }*/
