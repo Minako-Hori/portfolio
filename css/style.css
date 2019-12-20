@@ -12,7 +12,7 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 10000;
+    z-index: 30;
   }
 
 /*ナビゲーションバーが浮き上がっている仕上がり*/
@@ -27,6 +27,9 @@ div.wrap{
     margin: 0 auto;
     padding-left: 10%;
     padding-right:  10%;
+    /* position:absolute; */
+    z-index: 20;
+    background-color: rgba(51,153,255,0);
 }
 
 /*各大見出しの装飾*/
@@ -51,7 +54,6 @@ h2 {
 
 /*トップの全体装飾*/
 div.Top{
-    background-image: url(./image/tyoutyo.jpg);
     background-repeat: no-repeat; /*画像を繰り返さない*/
     background-position: center center; /*画像の表示開始位置を指定*/
     background-attachment: fixed; /*画像の表示位置を固定*/
@@ -80,6 +82,8 @@ img.Profile-image{
     height: 240px;
     float: left;
     border-radius: 20%;/*縁取り*/
+    padding-right: 5px;
+    z-index: 100;
 }
 
 /*プロフィールテキストの一部分を太文字に*/
@@ -152,4 +156,9 @@ img.img-pre{
     .effect-fade.effect-scroll {
         opacity : 1;
         transform : translate(0, 0);
+    }
+
+    div.background{
+        background-color: #39c1eb;
+    
     }
