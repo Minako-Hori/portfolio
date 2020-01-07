@@ -39,11 +39,11 @@ $(function () {
     });
 });
 
-$(document).ready(function () {
-    $('.background').snowfall({
-        image: "image/sakura_hanabira3.png",
-        maxSize: 30,
-        flakeIndex: "888",
-        maxSpeed: 3
-    });
-});
+// $(document).ready(function () {
+    // $('.background').snowfall({
+        // image: "image/sakura_hanabira3.png",
+        // maxSize: 30,
+        // flakeIndex: "888",
+        // maxSpeed: 3
+    // });
+// });
