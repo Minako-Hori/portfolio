@@ -54,10 +54,11 @@ h2 {
 
 /*トップの全体装飾*/
 div.Top{
+    /* background-image: url("/Users/minako_hori/git/portfolio/image/top.png"); */
     background-repeat: no-repeat; /*画像を繰り返さない*/
     background-position: center center; /*画像の表示開始位置を指定*/
     background-attachment: fixed; /*画像の表示位置を固定*/
-    background-size: cover;
+    /* background-size: 1500px; */
     /* opacity: 0.55; 55％不透明度(＝45％透過) */
     /* background-color: #ffffff; */
 }
@@ -151,9 +152,18 @@ img.img-pre{
      opacity : 0;
     transform : translate(0, 45px);
     transition : all 1000ms;
-    }
-    
-    .effect-fade.effect-scroll {
+}
+
+.effect-fade.effect-scroll {
         opacity : 1;
         transform : translate(0, 0);
-    }
+}
+
+img.img-top{
+    width: px;
+    height: auto;
+    float: right;
+    /* border-radius: 20%;縁取り */
+    /* padding-right: 5px; */
+    /* z-index: 100; */
+}
