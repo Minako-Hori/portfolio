@@ -55,12 +55,26 @@ h2 {
 /*トップの全体装飾*/
 div.Top{
     /* background-image: url("/Users/minako_hori/git/portfolio/image/top.png"); */
-    background-repeat: no-repeat; /*画像を繰り返さない*/
-    background-position: center center; /*画像の表示開始位置を指定*/
-    background-attachment: fixed; /*画像の表示位置を固定*/
-    /* background-size: 1500px; */
+    /*background-repeat: no-repeat; /*画像を繰り返さない*/
+    /*background-position: right center; /*画像の表示開始位置を指定*/
+    /*background-attachment: fixed; /*画像の表示位置を固定*/
+    /*background-size: 1500px;
+    padding-top: 100px;
+    padding-bottom: 1000px;
     /* opacity: 0.55; 55％不透明度(＝45％透過) */
     /* background-color: #ffffff; */
+    /* padding-top: 100px; */
+     padding-bottom: 500px; 
+}
+
+div.background{
+    background-image: url("/Users/minako_hori/git/portfolio/image/top.png");
+    background-repeat: no-repeat; /*画像を繰り返さない*/
+    background-position: right top; /*画像の表示開始位置を指定*/
+    background-attachment: scroll; /*画像の表示位置を固定*/
+    background-size: 1600px;
+    /* padding-top: 200px; */
+    /* padding-bottom: 1000px; */
 }
 
 /*プロフィールの全体装飾*/
@@ -92,6 +106,11 @@ img.Profile-image{
     font-weight: bold;
 }
 
+/*プロフィールテキストの表示位置*/
+.profile-text{
+    margin-left: 300px;
+}
+
 /*回り込みを解除*/
 .clearfix:after{
     content:"";
@@ -102,6 +121,7 @@ img.Profile-image{
 /*セクション間の余白*/
 section.career{
     margin-bottom: 35px;
+    margin-top: 45px;
 }
 
 /*表の見出し部分の装飾*/
@@ -152,6 +172,7 @@ img.img-pre{
      opacity : 0;
     transform : translate(0, 45px);
     transition : all 1000ms;
+    padding-bottom: 100px;
 }
 
 .effect-fade.effect-scroll {
@@ -159,11 +180,7 @@ img.img-pre{
         transform : translate(0, 0);
 }
 
-img.img-top{
-    width: px;
-    height: auto;
-    float: right;
-    /* border-radius: 20%;縁取り */
-    /* padding-right: 5px; */
-    /* z-index: 100; */
+img.production-image{
+    position: absolute;
+    width: 50%;
 }
