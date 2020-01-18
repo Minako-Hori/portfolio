@@ -4,7 +4,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Noto Serif JP', serif;
 }
 
 /* ナビゲーションバーの全体装飾 */
@@ -21,13 +21,7 @@ div.head-bottom{
 }
 
 div.wrap{
-    /* clear: both; */
-    margin-top: 100px;
-    /* padding: 3px 0; */
-    margin: 0 auto;
-    /* padding-left: 10%; */
-    /* padding-right:  10%; */
-    /* position:absolute; */
+    margin: 100px auto;
     z-index: 20;
     background-color: rgba(51,153,255,0);
 }
@@ -36,17 +30,15 @@ div.wrap{
 h1 {
     font-family: 'Bitter', serif;
     font-size: 50px;
-    border-bottom: 1px solid #cccccc;
-    padding-top: 100px;/*ナビバーと被らないように*/
+    border-bottom: 2px solid #ffffff;
+    /* padding-top: 100px;ナビバーと被らないように */
     padding-left: 10%;
     padding-right:  10%;
 }
 
-/*h1.Profile{
-    font-family: 'Bitter', serif;
-    font-size: 50px;
-    border-bottom: 1px solid #cccccc;
-}*/
+h1.Works{
+    border-bottom: 2px solid rgb(247, 166, 179);
+}
 
 /*各中見出し装飾*/
 h2 {
@@ -54,40 +46,82 @@ h2 {
     font-size: 24px;
 }
 
+h2.Me{
+    padding-bottom: .5em;
+    border-bottom: 3px double #ccc;
+}
+
+h2.icon{
+    padding-bottom: .5em;
+    border-bottom: 3px double #ccc;
+}
+
+h2.illust{
+    padding-bottom: .5em;
+    border-bottom: 3px double rgb(141, 92, 100);
+}
+
+h2.product{
+    padding-bottom: .5em;
+    border-bottom: 3px double rgb(141, 92, 100);
+}
+
 /*トップの全体装飾*/
-div.Top{
-     margin-bottom: auto;
-     padding-top: 25%;
-     margin-top:10%;
-     margin-left: 10%;
+/* div.Top{ */
+     /* margin-bottom: auto;
+     padding-top: 10px;
+     margin-top:10px;
+     margin-left: 10%; */
+/* } */
+
+div.Top {/*親div*/
+    position: relative;/*相対配置*/
+}
+  
+.Top p {
+    position: absolute;/*絶対配置*/
+    color: black;/*文字は白に*/
+    top: 0;
+    left: 0;
+    padding-left: 50px;
 }
 
-/* div.background{
-    background-image: url("/Users/minako_hori/git/portfolio/image/top3.png");
-    background-repeat: no-repeat; 
-    background-position: center top; 
-    background-attachment: scroll;
-    background-size:  50% auto; 
+.top-img, .top-imd > img {
+    margin: 0; padding: 0;
+    border: 0;
 }
 
-div.background:after {
+.top-img {
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+}
+
+.top-img:after {
     position: absolute;
     left: 0; top: 0; right: 0; bottom: 0;
     -moz-box-shadow: inset 0px 0px 50px 50px #fff;
     -webkit-box-shadow: inset 0px 0px 50px 50px #fff;
     box-shadow: inset 0px 0px 50px 50px #fff;
     content: " ";
-} */
+}
 
+span.title{
+    font-weight: bold;
+    font-size: 100%;
+
+}
+
+div.profile-background{
+    background-color: rgb(247, 166, 179);
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
 /*プロフィールの全体装飾*/
 div.Profile{
     padding-left: 10%;
     padding-right:  10%;
-    background-color: #ffffff;
-    /* background-repeat: no-repeat; /*画像を繰り返さない*/
-    /* background-position: center center; 画像の表示開始位置を指定 */
-    /* background-attachment: fixed; 画像の表示位置を固定 */
-    /* background-size: cover; */ 
 }
 
 /*プロフィール文装飾*/
@@ -108,7 +142,8 @@ img.Profile-image{
 
 /*プロフィールテキストの一部分を太文字に*/
 #Profile.Profile-txt span{
-    font-weight: bold;
+    font-weight: 900;
+    font-size: 50px;
 }
 
 /*プロフィールテキストの表示位置*/
@@ -116,12 +151,12 @@ img.Profile-image{
     margin-left: 300px;
 }
 
-/*回り込みを解除*/
+/* 回り込みを解除
 .clearfix:after{
     content:"";
     display: block;
     clear: both;
-}
+} */
 
 /*セクション間の余白*/
 section.career{
@@ -132,7 +167,7 @@ section.career{
 /*表の見出し部分の装飾*/
 .career th{
     width: 240px;
-    background-color: #60dfff;
+    background-color: #ffd6d6;
     padding: 12px 0;
     border: 1px solid #cccccc;
     padding-left: 20px;
@@ -178,8 +213,8 @@ img.img-pre{
  .effect-fade {
     opacity : 0;
     transform : translate(0, 45px);
-    transition : all 1000ms;
-    padding-bottom: 100px;
+    transition : all 1500ms;
+    padding-top: 100px;
 }
 
 .effect-fade.effect-scroll {
@@ -205,11 +240,6 @@ div.productions{
     padding-top: 5%;
 }
 
-div.contact{
-    padding-left: 10%;
-    padding-right:  10%;
-}
-
 .video{
     position:relative;
     width:100%;
@@ -222,3 +252,14 @@ div.contact{
     width:100%;
     height:100%;
   }
+
+  div.contact{
+    padding-left: 10%;
+    padding-right:  10%;
+}
+
+div.contact-background{
+    background-color: rgb(247, 166, 179);
+    padding-top: 20px;
+    padding-bottom: 400px;
+}
